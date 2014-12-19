@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+"""
+This code is from website. And I substitute "import Image" to
+from PIL import Image.
+
+"""
 
 from PIL import Image
 
