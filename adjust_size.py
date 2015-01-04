@@ -1,4 +1,7 @@
 #coding: utf-8
+"""
+This script is used to resize images.
+"""
 import os
 import sys
 import shutil
