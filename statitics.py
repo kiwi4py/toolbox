@@ -35,10 +35,3 @@ for keys, values in result:
    for k, v in column_dict.items():
       print k, v
    print '\r\n'
-
-
-
-
- 
-       
-       
