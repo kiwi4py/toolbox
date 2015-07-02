@@ -2,8 +2,8 @@
 """
 One day, the mobile developer came to me for a simple algorithm of drawing lines for the words that have notes.
 The requirement is that in a piece of text, let's use number to designate each single word, 1 up to 13, for example,
-if there are a note for 1 and 2, and another note for 2 and 3, there is no other notes that contain 3, so we will draw 
-a single line that ranges from 1 to 3. After a few trials, I have a solution. Frankly speaking, I am not good at 
+if there are a note for 1 and 2, and another note for 2 and 3, there is no other notes that contain 
+any of these three word, so we will draw a single line that ranges from 1 to 3. After a few trials, I have a solution. Frankly speaking, I am not good at 
 algorithms. I think there must be some more powerful ones, which are expected to be more efficiency in time and may save
 more space. Paste here just for the recording my learning experience.
 """
