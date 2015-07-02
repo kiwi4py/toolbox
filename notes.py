@@ -1,4 +1,12 @@
-#coding: utf-8
+#coding: -*-utf-8-*-
+"""
+One day, the mobile developer came to me for a simple algorithm of drawing lines for the words that have notes.
+The requirement is that in a piece of text, let's use number to designate each single word, 1 up to 13, for example,
+if there are a note for 1 and 2, and another note for 2 and 3, there is no other notes that contain 3, so we will draw 
+a single line that ranges from 1 to 3. After a few trials, I have a solution. Frankly speaking, I am not good at 
+algorithms. I think there must be some more powerful ones, which are expected to be more efficiency in time and may save
+more space. Paste here just for the recording my learning experience.
+"""
 
 #所有的笔记。
 #notes = [[1, 2], [1, 2, 3], [4, 5, 6, 7], [4, 5, 6, 7, 8, 9, 10], [11, 12]]
@@ -42,7 +50,6 @@ ele_note_dict的内容如下
 """
             
 covered = [-100] #用来盛放已经画过线的词。max函数参数不能为空，初始化随便用了一个很小的值。
-
 lines =  [] #用来盛放最后的划线。
 
 """
@@ -58,8 +65,3 @@ for k in ele_note_dict.keys():
         covered.append(end)
 
 print lines
-
-    
-
-    
-
