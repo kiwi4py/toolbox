@@ -8,10 +8,9 @@ algorithms. I think there must be some more powerful ones, which are expected to
 more space. Paste here just for the recording my learning experience.
 """
 
-#所有的笔记。
+#笔记。
 #notes = [[1, 2], [1, 2, 3], [4, 5, 6, 7], [4, 5, 6, 7, 8, 9, 10], [11, 12]]
-notes = [[1, 2], [2, 3], [4, 5, 6, 7], [4, 5, 6, 7, 8, 9, 10], [11, 12], [1, 13]]
-#notes = [[1, 2], [2, 3], [4, 5, 6, 7], [ 8, 9, 10], [11, 12]]
+
 
 #建立空集合，用来盛放笔记的每一个词。
 temp_list = set()
