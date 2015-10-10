@@ -54,6 +54,3 @@ if __name__ == "__main__":
                 tree = parseRaw(filename)
                 parseDict(tree)
         
-                
-        
-
