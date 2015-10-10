@@ -1,8 +1,6 @@
 #coding: utf-8
 
 from xml.etree.ElementTree import ElementTree as ET
-from xml.dom import minidom
-
 
 tree = ET()
 
@@ -35,6 +33,7 @@ def parseDict(tree):
                 derivatives = body.findall("derivative")
                 for h in hyphs:
                         body.remove(h)
+                        
                 for p in phrases:
                     body.remove(p)
 
