@@ -1,5 +1,7 @@
 #coding: utf-8
-
+"""
+Name    WORD V1	5/5	5/5	3/5	2/5	23/50
+"""
 one = open("one.txt", "r").readlines()
 two = open("two.txt", "r").readlines()
 
@@ -23,6 +25,3 @@ for i in one:
         if name == name2:
             print "%s \t %s \t %s" %(original,  original_re,  original2_re)
             break
-            
-        
-    
