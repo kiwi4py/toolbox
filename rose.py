@@ -1,6 +1,6 @@
 #coding:utf-8
 
-s = open("wangmei.txt", "r").read()
+s = open("rose.txt", "r").read()
 s = s.split("\n")
 counted = []
 for i in s:
@@ -15,8 +15,3 @@ for item in set(counted):
         if j[-1] == item:
             left = left + ";" + j[0]
     print "%s \t %s \t %s" %(item, counted.count(item), left)
-
-        
-        
-       
-    
