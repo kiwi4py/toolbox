@@ -7,7 +7,7 @@ FRONT = ""
 END = ""
 
 s = requests.session()
-f = codecs.open('stone.txt','w','utf-8')
+f = codecs.open('result.txt','w','utf-8')
 for i in range(0, 1263, 30):
     url = FRONT + str(i) + END
     target = s.get(url)
