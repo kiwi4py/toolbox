@@ -1,0 +1,13 @@
+#-*-coding:utf-8-*-
+
+import urllib2
+from bs4 import BeautifulSoup
+
+jdbookurl = "http://item.jd.com/11982572.html"
+response = urllib2.urlopen(jdbookurl) 
+html = response.read()
+soup= BeautifulSoup(html)
+
+tag="comment-content"
+for cmt in soup.find_all(class_=tag):
+    print cmt.text
