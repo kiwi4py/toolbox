@@ -31,3 +31,27 @@ for list_page_number in range(2, 88):
     sushi_detail_page_number.extend(detail_page_number)
     
 print len(sushi_detail_page_number)
+
+# week 2
+# In:诗词详情页网址中的编号 Out:诗词详情页的BS实例
+def get_poem_soup(detail_page_number):
+    url = "http://www.shicimingju.com/chaxun/list/" \
+          + detail_page_number + ".html"
+    response = urllib2.urlopen(url)
+    poem_html = response.read()
+    poem_html_soup = BS(poem_html)
+    return poem_html_soup
+
+# In:诗词详情页的BS实例 Out：诗词标题和内容
+def get_poem(poem_html_soup):
+    div = poem_html_soup.find(id="middlediv")
+    for sub_div in div.find_all("div", class_="zhuti"):
+        title = sub_div.find_all("h2")
+        content = sub_div.find(id="shicineirong")
+        print title[0].text       
+        print content.text
+        
+# 用赤壁怀古这首词，验证代码是否符合预期        
+detail_page_number = "3710"
+poem_html_soup = get_poem_soup(detail_page_number)
+get_poem(poem_html_soup)
