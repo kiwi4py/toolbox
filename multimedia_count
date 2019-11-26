@@ -1,0 +1,21 @@
+import os
+from moviepy.editor import *
+
+
+def get_name(directories):
+    file_list = []
+    for root, dirs, files in os.walk(directories):
+        file_list.extend(files)
+    return file_list
+    
+count = open("count.txt","w")
+f = os.getcwd()
+videos = get_name(f)
+for i in videos:
+    if i.endswith("mp4"):
+        clip = VideoFileClip(i)
+        time = clip.duration
+        count.write(i+"\t"+str(time)+"\n")
+        print(i,time)
+count.close()
+print("Finish")
